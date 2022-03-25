@@ -9,7 +9,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String homeApp(Model model){
-        model.addAttribute("mensagem","Invasão hacker *-*");
+        model.addAttribute("mensagem","Esta foi uma mensagem injetada atraves do model");
         return "index";
     }
 }
